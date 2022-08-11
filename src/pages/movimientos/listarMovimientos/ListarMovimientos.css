@@ -1,0 +1,7 @@
+#separador{
+    border-top: 1px solid var(--bs-border-color-translucent);
+}
+
+#accordionLista{
+    margin-top: 5%;
+}

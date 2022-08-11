@@ -1,7 +1,9 @@
 import React from 'react'
 import Login from './login/Login'
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
-import AgregarMovimiento from '../components/movimientos/agregarMovimiento/AgregarMovimiento'
+import AgregarMovimiento from './movimientos/agregarMovimiento/AgregarMovimiento'
+import ListarMovimientos from './movimientos/listarMovimientos/ListarMovimientos'
+
 
 const HomePublico = () => {
   return (
@@ -9,7 +11,8 @@ const HomePublico = () => {
         <BrowserRouter>
             <Routes>
             <Route path='/' element={<Login />}/>
-            <Route path='/movimiento/agregar' element={<AgregarMovimiento />} />
+            <Route path='/movimientos/agregar' element={<AgregarMovimiento />} />
+            <Route path='/movimientos/lista' element={<ListarMovimientos />} />
             </Routes>
         </BrowserRouter>
     </>
